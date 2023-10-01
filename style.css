@@ -1,0 +1,28 @@
+body {
+    background: #1a1b26;
+    color: #c0caf5;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    text-align: center;
+}
+
+#terminal {
+    margin: auto;
+    min-height: 450px;
+    min-width: 675px;
+    width: 70%;
+    border: 2px solid #9d7cd8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#command {
+    background: #1a1b26;
+    outline: none;
+    color: #c0caff;
+    border: none;
+}

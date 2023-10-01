@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>j-tew webterm</title>
+    <title>Justin's Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1> 
+    <div id="intro">
+        <h1>Welcome to my terminal!</h1>
+        <p>To get started, type "help"</p>
+    </div>
+    <div id="terminal">
+        <label id="prompt" for="command">~»</label>
+        <input type="text" id="command" name="command" autocomplete="off" maxlength="22" autofocus>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
