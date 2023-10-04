@@ -1,12 +1,13 @@
-const terminal = document.getElementById('terminal')
-const input = document.getElementById('command');
-
-terminal.addEventListener('mouseup', (e) => {
+// Keep command line focused
+document.body.addEventListener('mouseup', () => {
   input.focus();
 });
 
-input.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
+// Accept a command
+const input = document.getElementById('command');
+
+input.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
     console.log(input.value);
   }
 });

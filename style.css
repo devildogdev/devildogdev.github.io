@@ -3,21 +3,12 @@ body {
     color: #c0caf5;
     font-family: 'Source Code Pro', monospace;
     margin: 0;
-    padding: 0;
+    padding-left: 5px;
+    height: 100vh;
 }
 
-#intro {
-    text-align: center;
-}
-
-#terminal {
-    margin: auto;
-    min-height: 450px;
-    min-width: 675px;
-    width: 70%;
-    border: 2px solid #9d7cd8;
-    border-radius: 10px;
-    padding: 5px;
+#help {
+    margin-top: 0px;
 }
 
 #command {
@@ -25,4 +16,28 @@ body {
     outline: none;
     color: #c0caff;
     border: none;
+}
+
+.red {
+    color: #f7768e;
+}
+
+.yellow {
+    color: #e0af68;
+}
+
+.green {
+    color: #9ece6a;
+}
+
+.blue {
+    color: #7aa2f7;
+}
+
+.purple {
+    color: #bb9af7;
+}
+
+.cyan {
+    color: #2ac3de;
 }

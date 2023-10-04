@@ -11,12 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="intro">
-        <h1>Welcome to my terminal!</h1>
-        <p>To get started, type "help"</p>
-    </div>
+<pre id="intro">
+<span class="red">.-.-----------.-.</span>   
+<span class="red">| |-----------|#|</span>   <span class="green">j-tew</span>@<span class="green">webterm</span>
+<span class="green">| |-----------| |</span>   <span class="red">name</span>    <span class="yellow">justin tew</span>
+<span class="green">| |-----------| |</span>   <span class="red">title</span>   <span class="yellow">developer</span>
+<span class="yellow">| |-----------| |</span>   <span class="red">shell</span>   <span class="yellow">zsh</span>
+<span class="yellow">| "-----------' |</span>   <span class="red">editor</span>  <span class="yellow">nvim</span>
+<span class="blue">|  .-----.-..   |</span>   
+<span class="blue">|  |     | || |||</span>   <span class="red">&#x2588</span><span class="red">&#x2588</span><span class="green">&#x2588</span><span class="green">&#x2588</span><span class="yellow">&#x2588</span><span class="yellow">&#x2588</span><span class="blue">&#x2588</span><span class="blue">&#x2588</span><span class="purple">&#x2588</span><span class="purple">&#x2588</span><span class="cyan">&#x2588</span><span class="cyan">&#x2588</span>
+<span class="purple">|  |     | || \/|</span>   
+<span class="purple">"--^-----^-^^---'</span> 
+</pre>
+    <p id="help">Type "help" to see available commands (or just console log for now)</p>
     <div id="terminal">
-        <label id="prompt" for="command">~»</label>
+        <label id="prompt" for="command"><span class="cyan">~</span><span class="green">❯</span></label>
         <input type="text" id="command" name="command" autocomplete="off" maxlength="22" autofocus>
     </div>
     <script type="text/javascript" src="script.js"></script>
