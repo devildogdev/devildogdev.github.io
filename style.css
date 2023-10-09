@@ -2,6 +2,7 @@ body {
     background: #1a1b26;
     color: #c0caf5;
     font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
     margin: 0%;
     padding-left: 5px;
     height: 100vh;
@@ -11,13 +12,18 @@ pre {
     margin: 0%;
 }
 
-#command {
+textarea {
+    resize: none;
     background: #1a1b26;
     outline: none;
     color: #c0caff;
     border: none;
+    padding: 0;
     font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
+}
+
+#output {
+    max-width: 75vw;
 }
 
 .red {

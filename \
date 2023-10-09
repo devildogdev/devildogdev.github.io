@@ -37,7 +37,7 @@ cmdInput.addEventListener('keypress', (event) => {
       outputDiv.innerHTML = outputText;
       document.body.append(outputDiv);
     }
-    let newLine = cmdLines.item(0).cloneNode(true);
-    document.body.append(newLine);
+    let newLine = cmdLines.item(1).cloneNode(true);
+    document.append(newLine);
   }
 });
