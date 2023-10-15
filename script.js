@@ -23,7 +23,7 @@ const mkTerminal = () => {
 onload = () => {
   mkTerminal();
   var cmdInput = document.getElementById('command');
-  cmdInput.value = ''
+  cmdInput.value = '';
 }
 
 // Keep command line focused when clicking anywhere
