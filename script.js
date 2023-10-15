@@ -20,12 +20,9 @@ const mkTerminal = () => {
 }
 
 // New terminal on load
-mkTerminal();
-
-// Clear the command on refresh/load
-var cmdInput = document.getElementById('command');
-
 onload = () => {
+  mkTerminal();
+  var cmdInput = document.getElementById('command');
   cmdInput.value = ''
 }
 
