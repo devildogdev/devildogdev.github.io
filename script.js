@@ -22,14 +22,7 @@ const mkTerminal = () => {
 // New terminal on load
 onload = () => {
   mkTerminal();
-  var cmdInput = document.getElementById('command');
-  cmdInput.value = '';
 }
-
-// Keep command line focused when clicking anywhere
-document.body.addEventListener('mouseup', () => {
-  cmdInput.focus();
-});
 
 // Command list
 const commands = {
@@ -45,10 +38,17 @@ const commands = {
 }
 const validCmds = Object.keys(commands);
 
+// Keep command line focused when clicking anywhere
+document.body.addEventListener('mouseup', () => {
+  let cmdInput = document.getElementById('command');
+  cmdInput.focus();
+});
+
 // On pressing Enter, don't go to new line, check command and output, if valid
 document.body.addEventListener('keypress', (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
+    let cmdInput = document.getElementById('command');
     let cmd = cmdInput.value;
     if (validCmds.includes(cmd)) {
       renderOutput(cmd);
