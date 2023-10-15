@@ -26,15 +26,28 @@ onload = () => {
 
 // Command list
 const commands = {
-  help: `These are the allowed commands:<br>
-  &nbsp;&nbsp; help -> print this dialog<br>
-  &nbsp;&nbsp; about -> print info about the developer<br>
-  &nbsp;&nbsp; projects -> print links to the developer's projects<br>
-  &nbsp;&nbsp; skills -> print some of what the developer is good at<br>`,
-  about: `<p>My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
-  I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
-  Javacript, Linux, scripting, DevOps, and networking.</p>`,
+  help: `
+    These are the allowed commands:<br>
+    &nbsp;&nbsp; help -> print this dialog<br>
+    &nbsp;&nbsp; about -> print info about the developer<br>
+    &nbsp;&nbsp; projects -> print links to the developer's projects<br>
+    &nbsp;&nbsp; skills -> print some of what the developer is good at<br>
+  `,
+  about: `
+    <p>My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
+    I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
+    Javacript, Linux, scripting, DevOps, and networking.</p>
+  `,
   // Add projects command to output links to projects
+  projects: `
+      <p>Some of the projects on <a href="https://github.com/j-tew">my Github</a> include:</p>
+      <ul>
+        <li>Hangman game (my first Python project)</li>
+        <li>Static site for a local bar using Django</li>
+        <li>ISS Location web app that uses APIs</li>
+        <li>Typing Test CLI</li>
+      </ul>
+  `
 }
 const validCmds = Object.keys(commands);
 
