@@ -45,8 +45,8 @@ const Shell = {
     <p>
       My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
       I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
-      Javacript, Linux, scripting, DevOps, SQL, and networking. Other areas I intend to explore
-      include C, C#, C++, Go, Rust, Docker, Kubernetes, and anything else that captivates me to learn.
+      JavaScript, Linux, scripting, DevOps, SQL, and networking. Other areas I intend to explore
+      include C, C#, C++, Go, Rust, Docker, Kubernetes, and whatever else captures my interest and inspires me to learn.
     </p>`
   },
   projects: () => {
