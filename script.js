@@ -1,6 +1,10 @@
 // Generating the output of the command
 const renderOutput = (cmd) => {
-  let outputText = commands[cmd];
+  if (cmd === 'clear') {
+    Shell.clear();
+    return
+  }
+  let outputText = Shell[cmd]();
   let outputDiv = document.createElement('div');
   outputDiv.setAttribute('id', 'output');
   outputDiv.innerHTML = outputText;
@@ -11,7 +15,7 @@ const renderOutput = (cmd) => {
 const mkTerminal = () => {
   let newTermHTML = `
     <span id="prompt"><span class="cyan">~</span><span class="green">❯</span></span>
-    <span><textarea id="command" rows="1" cols="22" autofocus></textarea></span>
+    <span><textarea id="command" rows="1" cols="22" maxlength="22" autofocus></textarea></span>
   `;
   let newTermDiv = document.createElement('div');
   newTermDiv.setAttribute('name', 'terminal');
@@ -24,38 +28,49 @@ onload = () => {
   mkTerminal();
 }
 
-// Command list
-const commands = {
-  help: `
-    These are the allowed commands:<br>
-    &nbsp;&nbsp; help -> print this dialog<br>
-    &nbsp;&nbsp; about -> print info about the developer<br>
-    &nbsp;&nbsp; projects -> print links to the developer's projects<br>
-    &nbsp;&nbsp; skills -> print some of what the developer is good at<br>
-  `,
-  about: `
-    <p>My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
-    I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
-    Javacript, Linux, scripting, DevOps, and networking.</p>
-  `,
-  // Add projects command to output links to projects
-  projects: `
+// Shell commands
+const Shell = {
+  help: () => {
+    return `
+      <p>Available commands:</p>
+      <ul style="list-style-type: none">
+        <li>help -> print this dialog</li>
+        <li>about -> print a short description of the developer</li>
+        <li>projects -> print a list of the developer's projects</li>
+        <li>clear -> clear the terminal</li>
+    `
+  },
+  about: () => {
+    return `
+    <p>
+      My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
+      I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
+      Javacript, Linux, scripting, DevOps, SQL, and networking. Other areas I intend to explore
+      include C, C#, C++, Go, Rust, Docker, Kubernetes, and anything else that captivates me to learn.
+    </p>`
+  },
+  projects: () => {
+    return `
       <p>Some of the projects on <a href="https://github.com/j-tew">my Github</a> include:</p>
-      <ul>
-        <li>Hangman game (my first Python project)</li>
-        <li>Static site for a local bar using Django</li>
-        <li>ISS Location web app that uses APIs</li>
-        <li>Typing Test CLI</li>
-      </ul>
-  `
+      <ul style="list-style-type: none">
+        <li>-> Hangman game (my first Python project)</li>
+        <li>-> Static site for a local bar using Django</li>
+        <li>-> ISS Location web app that uses APIs</li>
+        <li>-> Typing Test CLI</li>
+      </ul>`
+  },
+  clear: () => {
+    document.body.innerHTML = '';
+  }
 }
-const validCmds = Object.keys(commands);
+// List of shell commands
+const validCmds = Object.keys(Shell);
 
 // Keep command line focused when clicking anywhere
 document.body.addEventListener('mouseup', () => {
   let cmdInput = document.getElementById('command');
   cmdInput.focus();
-});
+})
 
 // On pressing Enter, don't go to new line, check command and output, if valid
 document.body.addEventListener('keypress', (event) => {
@@ -75,6 +90,6 @@ document.body.addEventListener('keypress', (event) => {
   cmdInput = document.getElementById('command');
   cmdInput.focus();
   }
-});
+})
 
 
