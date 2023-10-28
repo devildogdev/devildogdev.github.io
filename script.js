@@ -9,7 +9,7 @@ const renderOutput = (cmd) => {
   outputDiv.setAttribute('id', 'output');
   outputDiv.innerHTML = outputText;
   document.body.append(outputDiv);
-}
+};
 
 // Add new line for the terminal
 const mkTerminal = () => {
@@ -21,15 +21,18 @@ const mkTerminal = () => {
   newTermDiv.setAttribute('name', 'terminal');
   newTermDiv.innerHTML = newTermHTML;
   document.body.append(newTermDiv);
-}
+};
 
 // New terminal on load
 onload = () => {
   mkTerminal();
-}
+};
 
 // Shell commands
 const Shell = {
+  invalid: () => {
+    return `<p>Command not found.<br>Run 'help' to see the available commands</p>`
+  },
   help: () => {
     return `
       <p>Available commands:</p>
@@ -62,7 +65,7 @@ const Shell = {
   clear: () => {
     document.body.innerHTML = '';
   }
-}
+};
 // List of shell commands
 const validCmds = Object.keys(Shell);
 
@@ -70,7 +73,7 @@ const validCmds = Object.keys(Shell);
 document.body.addEventListener('mouseup', () => {
   let cmdInput = document.getElementById('command');
   cmdInput.focus();
-})
+});
 
 // On pressing Enter, don't go to new line, check command and output, if valid
 document.body.addEventListener('keypress', (event) => {
@@ -78,7 +81,9 @@ document.body.addEventListener('keypress', (event) => {
     event.preventDefault();
     let cmdInput = document.getElementById('command');
     let cmd = cmdInput.value;
-    if (validCmds.includes(cmd)) {
+    if (cmd === "invalid" || !(validCmds.includes(cmd))) {
+      renderOutput("invalid");
+    } else {
       renderOutput(cmd);
     }
   // Disable the text area after command is entered
@@ -90,6 +95,6 @@ document.body.addEventListener('keypress', (event) => {
   cmdInput = document.getElementById('command');
   cmdInput.focus();
   }
-})
+});
 
 
