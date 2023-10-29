@@ -62,7 +62,7 @@ const Shell = {
         <li>-> <a href="${myGitHub}/Hangman" target="_blank">Hangman game (my first Python project)</a></li>
         <li>-> <a href="${myGitHub}/crazy8_site" target="_blank">Static site for a local bar using Django</a></li>
         <li>-> <a href="${myGitHub}/iss_location" target="_blank">ISS Location Flask web app that uses APIs</a></li>
-        <li>-> <a href="${myGitHub}/curses-typing-test">Typing Test CLI using NCurses</a></li>
+        <li>-> <a href="${myGitHub}/curses-typing-test" target="_blank">Typing Test CLI using NCurses</a></li>
         <li>-> <a href="/js-simple-calc">A simple JQuery calculator(my first Javascript project)</a></li>
       </ul>`
   },
