@@ -39,8 +39,9 @@ const Shell = {
       <p>Available commands:</p>
       <ul style="list-style-type: none">
         <li>help -> print this dialog</li>
-        <li>about -> print a short description of the developer</li>
-        <li>projects -> print a few of the developer's projects</li>
+        <li>about -> print a short intro</li>
+        <li>projects -> print a few of my projects</li>
+        <li>dotfiles -> get my configs</li>
         <li>calc -> open a calculator</li>
         <li>clear -> clear the terminal</li>
     `
