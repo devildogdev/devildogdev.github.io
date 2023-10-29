@@ -76,11 +76,11 @@ const Shell = {
   dotfiles: () => {
     return `
     <p>You can find my dotfiles <a href="${myGitHub}/dotfiles" target="_blank">here</a>.</p>
-    <p>I prefer a terminal=centric workflow, so my configurations include:</p>
+    <p>I prefer a terminal based workflow, so my configurations include:</p>
     <ul style="list-style-type: none">
       <li>-> alacritty teminal</li>
       <li>-> zsh</li>
-      <li>-> spaceship prompt (kinda overkill, so I plan to customize my prompt on my own)</li>
+      <li>-> spaceship prompt (kinda slow)</li>
       <li>-> tmux</li>
       <li>-> lf (a CLI file manager written in Go)</li>
       <li>-> neovim (with Lazy plugin manager for LSP, completion, and fuzzy finder)</li>
