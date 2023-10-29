@@ -75,7 +75,7 @@ const Shell = {
   },
   dotfiles: () => {
     return `
-    <p>You can find my dotfiles <a href="${myGitHub}" target="_blank">here</a>.</p>
+    <p>You can find my dotfiles <a href="${myGitHub}/dotfiles" target="_blank">here</a>.</p>
     <p>I prefer a terminal=centric workflow, so my configurations include:</p>
     <ul style="list-style-type: none">
       <li>-> alacritty teminal</li>
