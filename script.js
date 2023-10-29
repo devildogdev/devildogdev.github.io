@@ -70,6 +70,7 @@ const Shell = {
   },
   calc: () => {
     window.location.assign('/js-simple-calc')
+    return ``
   },
   dotfiles: () => {
     return `
