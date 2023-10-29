@@ -1,3 +1,4 @@
+const myGitHub = "https://github.com/j-tew"
 // Generating the output of the command
 const renderOutput = (cmd) => {
   if (cmd === 'clear') {
@@ -39,7 +40,8 @@ const Shell = {
       <ul style="list-style-type: none">
         <li>help -> print this dialog</li>
         <li>about -> print a short description of the developer</li>
-        <li>projects -> print a list of the developer's projects</li>
+        <li>projects -> print a few of the developer's projects</li>
+        <li>calc -> open a calculator</li>
         <li>clear -> clear the terminal</li>
     `
   },
@@ -54,16 +56,33 @@ const Shell = {
   },
   projects: () => {
     return `
-      <p>Some of the projects on <a href="https://github.com/j-tew">my Github</a> include:</p>
+      <p>Some of the projects on <a href="${myGitHub}" target="_blank">my GitHub</a> include:</p>
       <ul style="list-style-type: none">
-        <li>-> Hangman game (my first Python project)</li>
-        <li>-> Static site for a local bar using Django</li>
-        <li>-> ISS Location web app that uses APIs</li>
-        <li>-> Typing Test CLI</li>
+        <li>-> <a href="${myGitHub}/Hangman" target="_blank">Hangman game (my first Python project)</a></li>
+        <li>-> <a href="${myGitHub}/crazy8_site" target="_blank">Static site for a local bar using Django</a></li>
+        <li>-> <a href="${myGitHub}/iss_location" target="_blank">ISS Location Flask web app that uses APIs</a></li>
+        <li>-> <a href="${myGitHub}/curses-typing-test">Typing Test CLI using NCurses</a></li>
+        <li>-> <a href="/js-simple-calc">A simple JQuery calculator(my first Javascript project)</a></li>
       </ul>`
   },
   clear: () => {
     document.body.innerHTML = '';
+  },
+  calc: () => {
+    window.location.assign('/js-simple-calc')
+  },
+  dotfiles: () => {
+    return `
+    <p>You can find my dotfiles <a href="${myGitHub}" target="_blank">here</a>.</p>
+    <p>I prefer a terminal=centric workflow, so my configurations include:</p>
+    <ul style="list-style-type: none">
+      <li>-> alacritty teminal</li>
+      <li>-> zsh</li>
+      <li>-> spaceship prompt (kinda overkill, so I plan to customize my prompt on my own)</li>
+      <li>-> tmux</li>
+      <li>-> lf (a CLI file manager written in Go)</li>
+      <li>-> neovim (with Lazy plugin manager for LSP, completion, and fuzzy finder)</li>
+    </ul>`
   }
 };
 // List of shell commands
