@@ -80,7 +80,6 @@ const Shell = {
     <ul style="list-style-type: none">
       <li>-> alacritty teminal</li>
       <li>-> zsh</li>
-      <li>-> spaceship prompt (kinda slow)</li>
       <li>-> tmux</li>
       <li>-> lf (a CLI file manager written in Go)</li>
       <li>-> neovim (with Lazy plugin manager for LSP, completion, and fuzzy finder)</li>
