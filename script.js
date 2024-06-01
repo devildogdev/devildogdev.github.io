@@ -51,19 +51,21 @@ const Shell = {
     <p>
       My name is Justin Tew, and I'm a Marine Corps veteran and a software developer.
       I am primarily proficient in Python, but can learn anything quickly. Some other areas I have gained experience in include
-      JavaScript, Linux, scripting, DevOps, SQL, and networking. I've recently dipped my toes into Go and Docker. Other areas I intend to explore
-      include C, Rust, Kubernetes, and whatever else captures my interest and inspires me to learn.
+      JavaScript, Linux, scripting, DevOps, SQL, and networking. I'm getting familiar with Go and Docker. Other areas I intend to explore
+      include C, Kubernetes, and whatever else captures my interest and inspires me to learn.
     </p>`
   },
   projects: () => {
     return `
       <p>Some of the projects on <a href="${myGitHub}" target="_blank">my GitHub</a> include:</p>
       <ul style="list-style-type: none">
+        <li>-> <a href="${myGitHub}/warlord" target="_blank">A spin on the 1984 MSDOS game "Drug Wars" (CLI written in Go)</a></li>
+        <li>-> <a href="${myGitHub}/ptlog" target="_blank">An htmx web app that just puts form input into a table (my first htmx project</a></li>
         <li>-> <a href="${myGitHub}/genpass" target="_blank">A simple password generator (my first Go project)</a></li>
         <li>-> <a href="${myGitHub}/Hangman" target="_blank">Hangman game (my first Python project)</a></li>
         <li>-> <a href="${myGitHub}/crazy8_site" target="_blank">Static site for a local bar using Django</a></li>
-        <li>-> <a href="${myGitHub}/iss_location" target="_blank">ISS Location Flask web app that uses APIs</a></li>
         <li>-> <a href="${myGitHub}/curses-typing-test" target="_blank">Typing Test CLI using NCurses</a></li>
+        <li>-> <a href="${myGitHub}/iss_location" target="_blank">ISS Location Flask web app that uses APIs</a></li>
         <li>-> <a href="/js-simple-calc">A simple JQuery calculator(my first Javascript project)</a></li>
       </ul>`
   },
