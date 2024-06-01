@@ -59,8 +59,8 @@ const Shell = {
     return `
       <p>Some of the projects on <a href="${myGitHub}" target="_blank">my GitHub</a> include:</p>
       <ul style="list-style-type: none">
-        <li>-> <a href="${myGitHub}/warlord" target="_blank">A spin on the 1984 MSDOS game "Drug Wars" (CLI written in Go)</a></li>
-        <li>-> <a href="${myGitHub}/ptlog" target="_blank">An htmx web app that just puts form input into a table (my first htmx project</a></li>
+        <li>-> <a href="${myGitHub}/warlord" target="_blank">A spin on the 1984 MSDOS game "Drug Wars" (*WIP* CLI written in Go)</a></li>
+        <li>-> <a href="${myGitHub}/ptlog" target="_blank">An htmx web app that just puts form input into a table (my first htmx project)</a></li>
         <li>-> <a href="${myGitHub}/genpass" target="_blank">A simple password generator (my first Go project)</a></li>
         <li>-> <a href="${myGitHub}/Hangman" target="_blank">Hangman game (my first Python project)</a></li>
         <li>-> <a href="${myGitHub}/crazy8_site" target="_blank">Static site for a local bar using Django</a></li>
