@@ -1,76 +1,75 @@
 body {
-    background: #1a1b26;
-    color: #c0caf5;
-    font-family: 'Source Code Pro', monospace;
+    background: #1e1e2e;
+    color: #cdd6f4;
+    font-family: Hack, monospace;
     font-size: 1rem;
     margin: 0%;
-    padding-left: 5px;
+    padding-left: 25vw;
+    padding-right: 25vw;
     height: 100vh;
 }
 
-pre {
-    margin: 0%;
-}
-
-textarea {
-    resize: none;
-    background: #1a1b26;
-    outline: none;
-    color: #c0caff;
-    border: none;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
-}
-
-p {
-    padding-left: 2vw;
+h1 {
+    font-size: 2em;
 }
 
 a {
-    color: #bb9af7;
+    color: #89b4fa;
 }
 
 a:link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
+    color: #cba6f7;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-#output {
-    max-width: 80vw;
+ul {
+    list-style: none;
 }
 
 .red {
-    color: #f7768e;
+    color: #f38ba8;
 }
 
 .yellow {
-    color: #e0af68;
+    color: #f9e2af;
 }
 
 .green {
-    color: #9ece6a;
+    color: #a6e3a1;
 }
 
 .blue {
-    color: #7aa2f7;
+    color: #89b4fa;
 }
 
 .purple {
-    color: #bb9af7;
+    color: #cba6f7;
 }
 
 .cyan {
-    color: #2ac3de;
+    color: #89dceb;
+}
+
+.orange {
+    color: #fab387;
+}
+
+.syntax {
+    color: #a6adc8;
+}
+
+.subhead {
+    font-size: 1.25em;
 }
