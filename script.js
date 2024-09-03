@@ -25,15 +25,15 @@ const projects = [
 onload = () => {
   for (const p of projects) {
     let url = `${gh}/${p.name}.git`;
-    document.getElementById("projects").append(`
-    <li>
+    let item = document.createElement("li");
+    item.innerHTML = `
         <span class="orange">-</span>
         <span class="syntax"> [</span>
         <span class="green">"${p.desc}"</span>
         <span class="syntax">](</span>
         <a href="${url}" target="_blank">${url}</a>
         <span class="syntax">)</span>
-    </li>
-    `);
+    `;
+    document.getElementById("projects").append(item);
   }
 };
