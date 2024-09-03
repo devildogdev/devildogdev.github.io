@@ -23,8 +23,7 @@ const projects = [
 ];
 
 onload = () => {
-  for (var i; i < projects.length; i++) {
-    let p = projects[i];
+  for (const p of projects) {
     let url = `${gh}/${p.name}.git`;
     document.getElementById("projects").append(`
     <li>
