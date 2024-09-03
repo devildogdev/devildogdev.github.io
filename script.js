@@ -22,12 +22,11 @@ const projects = [
   },
 ];
 
-window.onload = () => {
+onload = () => {
   for (var i; i < projects.length; i++) {
     let p = projects[i];
     let url = `${gh}/${p.name}.git`;
-    let pDiv = document.getElementById("projects");
-    pDiv.append(`
+    document.getElementById("projects").append(`
     <li>
         <span class="orange">-</span>
         <span class="syntax"> [</span>
