@@ -40,4 +40,4 @@ const getProjects = () => {
   }
 };
 
-document.onload(getProjects());
+window.onload(getProjects());
