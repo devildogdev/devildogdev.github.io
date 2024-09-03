@@ -27,7 +27,7 @@ window.onload = () => {
     let p = projects[i];
     let url = `${gh}/${p.name}.git`;
     let pDiv = document.getElementById("projects");
-    p.append(`
+    pDiv.append(`
     <li>
         <span class="orange">-</span>
         <span class="syntax"> [</span>
