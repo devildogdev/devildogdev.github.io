@@ -22,7 +22,7 @@ const projects = [
   },
 ];
 
-const getProjects = () => {
+window.onload = () => {
   for (var i; i < projects.length; i++) {
     let p = projects[i];
     let url = `${gh}/${p.name}.git`;
@@ -39,5 +39,3 @@ const getProjects = () => {
     `);
   }
 };
-
-window.onload(getProjects());
