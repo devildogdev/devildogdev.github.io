@@ -27,7 +27,7 @@ onload = () => {
     let url = `${gh}/${p.name}.git`;
     let item = document.createElement("li");
     item.innerHTML = `
-<span class="orange">-</span><span class="syntax"> [</span><span class="green">"${p.desc}"</span><span class="syntax">](</span><a href="${url}"target="_blank">${url}</a> <span class="syntax">)</span>
+      <p><span class="orange">-</span><span class="syntax"> [</span><span class="green">"${p.desc}"</span><span class="syntax">](</span><a href="${url}"target="_blank">${url}</a><span class="syntax">)</span></p>
     `;
     document.getElementById("projects").append(item);
   }
