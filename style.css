@@ -3,12 +3,14 @@ body {
     color: #cdd6f4;
     font-family: Hack, monospace;
     font-size: 1rem;
+    margin: 0px;
     min-width: 100vh;
     min-height: 100vh;
 }
 
 div {
     margin: auto;
+    padding-top: 2vh;
     width: 50%;
 }
 
